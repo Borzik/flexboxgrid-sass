@@ -8,6 +8,7 @@ $md-min: 768px;
 $lg-min: 992px;
 $xl-min: 1200px;
 $columnsNumber: 12;
+$xsViewport: "only screen";
 $smViewport: "only screen and (min-width: #{$sm-min})";
 $mdViewport: "only screen and (min-width: #{$md-min})";
 $lgViewport: "only screen and (min-width: #{$lg-min})";
@@ -74,59 +75,8 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
   max-width: 100%;
 }
 
-@mixin start {
-  justify-content: flex-start;
-  text-align: start;
-}
-
 .col-xs {
   @include auto-column();
-}
-
-.start-xs {
-  @include start();
-}
-
-.center-xs {
-  justify-content: center;
-  text-align: center;
-}
-
-.end-xs {
-  justify-content: flex-end;
-  text-align: end;
-}
-
-.top-xs {
-  align-items: flex-start;
-}
-
-.middle-xs {
-  align-items: center;
-}
-
-.bottom-xs {
-  align-items: flex-end;
-}
-
-.around-xs {
-  justify-content: space-around;
-}
-
-.between-xs {
-  justify-content: space-between;
-}
-
-.first-xs {
-  order: -1;
-}
-
-.last-xs {
-  order: 1;
-}
-
-.initial-order-xs {
-  order: initial;
 }
 
 @media #{$smViewport} {
@@ -148,41 +98,6 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
       @include basic-column();
       margin-left: (($i - 1) * 100% / $columnsNumber);
     }
-  }
-  .start-sm {
-    @include start();
-  }
-  .center-sm {
-    justify-content: center;
-    text-align: center;
-  }
-  .end-sm {
-    justify-content: flex-end;
-    text-align: end;
-  }
-  .top-sm {
-    align-items: flex-start;
-  }
-  .middle-sm {
-    align-items: center;
-  }
-  .bottom-sm {
-    align-items: flex-end;
-  }
-  .around-sm {
-    justify-content: space-around;
-  }
-  .between-sm {
-    justify-content: space-between;
-  }
-  .first-sm {
-    order: -1;
-  }
-  .last-sm {
-    order: 1;
-  }
-  .initial-order-sm {
-    order: initial;
   }
 }
 
@@ -206,41 +121,6 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
       margin-left: (($i - 1) * 100% / $columnsNumber);
     }
   }
-  .start-md {
-    @include start();
-  }
-  .center-md {
-    justify-content: center;
-    text-align: center;
-  }
-  .end-md {
-    justify-content: flex-end;
-    text-align: end;
-  }
-  .top-md {
-    align-items: flex-start;
-  }
-  .middle-md {
-    align-items: center;
-  }
-  .bottom-md {
-    align-items: flex-end;
-  }
-  .around-md {
-    justify-content: space-around;
-  }
-  .between-md {
-    justify-content: space-between;
-  }
-  .first-md {
-    order: -1;
-  }
-  .last-md {
-    order: 1;
-  }
-  .initial-order-md {
-    order: initial;
-  }
 }
 
 @media #{$lgViewport} {
@@ -262,41 +142,6 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
       @include basic-column();
       margin-left: (($i - 1) * 100% / $columnsNumber);
     }
-  }
-  .start-lg {
-    @include start();
-  }
-  .center-lg {
-    justify-content: center;
-    text-align: center;
-  }
-  .end-lg {
-    justify-content: flex-end;
-    text-align: end;
-  }
-  .top-lg {
-    align-items: flex-start;
-  }
-  .middle-lg {
-    align-items: center;
-  }
-  .bottom-lg {
-    align-items: flex-end;
-  }
-  .around-lg {
-    justify-content: space-around;
-  }
-  .between-lg {
-    justify-content: space-between;
-  }
-  .first-lg {
-    order: -1;
-  }
-  .last-lg {
-    order: 1;
-  }
-  .initial-order-lg {
-    order: initial;
   }
 }
 
@@ -320,40 +165,51 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
       margin-left: (($i - 1) * 100% / $columnsNumber);
     }
   }
-  .start-xl {
-    @include start();
-  }
-  .center-xl {
-    justify-content: center;
-    text-align: center;
-  }
-  .end-xl {
-    justify-content: flex-end;
-    text-align: end;
-  }
-  .top-xl {
-    align-items: flex-start;
-  }
-  .middle-xl {
-    align-items: center;
-  }
-  .bottom-xl {
-    align-items: flex-end;
-  }
-  .around-xl {
-    justify-content: space-around;
-  }
-  .between-xl {
-    justify-content: space-between;
-  }
-  .first-xl {
-    order: -1;
-  }
-  .last-xl {
-    order: 1;
-  }
-  .initial-order-xl {
-    order: initial;
+}
+
+@each $ss,
+$vp in (xs, $xsViewport),
+(sm, $smViewport),
+(md, $mdViewport),
+(lg, $lgViewport),
+(xl, $xlViewport) {
+  @media #{$vp} {
+    .start-#{$ss} {
+      justify-content: flex-start;
+      text-align: start;
+    }
+    .center-#{$ss} {
+      justify-content: center;
+      text-align: center;
+    }
+    .end-#{$ss} {
+      justify-content: flex-end;
+      text-align: end;
+    }
+    .top-#{$ss} {
+      align-items: flex-start;
+    }
+    .middle-#{$ss} {
+      align-items: center;
+    }
+    .bottom-#{$ss} {
+      align-items: flex-end;
+    }
+    .around-#{$ss} {
+      justify-content: space-around;
+    }
+    .between-#{$ss} {
+      justify-content: space-between;
+    }
+    .first-#{$ss} {
+      order: -1;
+    }
+    .last-#{$ss} {
+      order: 1;
+    }
+    .initial-order-#{$ss} {
+      order: initial;
+    }
   }
 }
 
