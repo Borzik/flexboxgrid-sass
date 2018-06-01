@@ -15,8 +15,8 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: calc(($gutter-width * 0.5) * -1);
-  margin-left: calc(($gutter-width * 0.5) * -1); }
+  margin-right: -8px;
+  margin-left: -8px; }
 
 .row.reverse {
   flex-direction: row-reverse; }
@@ -28,8 +28,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 8.33333%;
   max-width: 8.33333%; }
@@ -41,8 +41,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 16.66667%;
   max-width: 16.66667%; }
@@ -54,8 +54,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 25%;
   max-width: 25%; }
@@ -67,8 +67,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 33.33333%;
   max-width: 33.33333%; }
@@ -80,8 +80,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 41.66667%;
   max-width: 41.66667%; }
@@ -93,8 +93,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 50%;
   max-width: 50%; }
@@ -106,8 +106,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 58.33333%;
   max-width: 58.33333%; }
@@ -119,8 +119,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 66.66667%;
   max-width: 66.66667%; }
@@ -132,8 +132,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 75%;
   max-width: 75%; }
@@ -145,8 +145,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 83.33333%;
   max-width: 83.33333%; }
@@ -158,8 +158,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 91.66667%;
   max-width: 91.66667%; }
@@ -171,8 +171,8 @@
   box-sizing: border-box;
   flex: 0 0 auto;
   flex-basis: 100%;
-  padding-right: calc(($gutter-width * 0.5));
-  padding-left: calc(($gutter-width * 0.5));
+  padding-right: 8px;
+  padding-left: 8px;
   max-width: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -223,14 +223,14 @@
 
 @media only screen and (min-width: 576px) {
   .container {
-    width: calc($sm-min - $gutter-width);
+    width: 560px;
     max-width: 100%; }
   .col-sm {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-grow: 1;
     flex-basis: 0;
@@ -239,8 +239,8 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
@@ -248,16 +248,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 0%; }
   .col-sm-2 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 16.66667%;
     max-width: 16.66667%; }
@@ -265,16 +265,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 8.33333%; }
   .col-sm-3 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 25%;
     max-width: 25%; }
@@ -282,16 +282,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 16.66667%; }
   .col-sm-4 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 33.33333%;
     max-width: 33.33333%; }
@@ -299,16 +299,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 25%; }
   .col-sm-5 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
@@ -316,16 +316,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 33.33333%; }
   .col-sm-6 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -333,16 +333,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 41.66667%; }
   .col-sm-7 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 58.33333%;
     max-width: 58.33333%; }
@@ -350,16 +350,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 50%; }
   .col-sm-8 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 66.66667%;
     max-width: 66.66667%; }
@@ -367,16 +367,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 58.33333%; }
   .col-sm-9 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 75%;
     max-width: 75%; }
@@ -384,16 +384,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 66.66667%; }
   .col-sm-10 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 83.33333%;
     max-width: 83.33333%; }
@@ -401,16 +401,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 75%; }
   .col-sm-11 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 91.66667%;
     max-width: 91.66667%; }
@@ -418,16 +418,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 83.33333%; }
   .col-sm-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -435,8 +435,8 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 91.66667%; }
   .start-sm {
@@ -467,14 +467,14 @@
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: calc($md-min - $gutter-width);
+    width: 752px;
     max-width: 100%; }
   .col-md {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-grow: 1;
     flex-basis: 0;
@@ -483,8 +483,8 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
@@ -492,16 +492,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 0%; }
   .col-md-2 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 16.66667%;
     max-width: 16.66667%; }
@@ -509,16 +509,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 8.33333%; }
   .col-md-3 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 25%;
     max-width: 25%; }
@@ -526,16 +526,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 16.66667%; }
   .col-md-4 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 33.33333%;
     max-width: 33.33333%; }
@@ -543,16 +543,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 25%; }
   .col-md-5 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
@@ -560,16 +560,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 33.33333%; }
   .col-md-6 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -577,16 +577,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 41.66667%; }
   .col-md-7 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 58.33333%;
     max-width: 58.33333%; }
@@ -594,16 +594,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 50%; }
   .col-md-8 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 66.66667%;
     max-width: 66.66667%; }
@@ -611,16 +611,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 58.33333%; }
   .col-md-9 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 75%;
     max-width: 75%; }
@@ -628,16 +628,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 66.66667%; }
   .col-md-10 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 83.33333%;
     max-width: 83.33333%; }
@@ -645,16 +645,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 75%; }
   .col-md-11 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 91.66667%;
     max-width: 91.66667%; }
@@ -662,16 +662,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 83.33333%; }
   .col-md-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -679,8 +679,8 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 91.66667%; }
   .start-md {
@@ -711,14 +711,14 @@
 
 @media only screen and (min-width: 992px) {
   .container {
-    width: calc($lg-min - $gutter-width);
+    width: 976px;
     max-width: 100%; }
   .col-lg {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-grow: 1;
     flex-basis: 0;
@@ -727,8 +727,8 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
@@ -736,16 +736,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 0%; }
   .col-lg-2 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 16.66667%;
     max-width: 16.66667%; }
@@ -753,16 +753,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 8.33333%; }
   .col-lg-3 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 25%;
     max-width: 25%; }
@@ -770,16 +770,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 16.66667%; }
   .col-lg-4 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 33.33333%;
     max-width: 33.33333%; }
@@ -787,16 +787,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 25%; }
   .col-lg-5 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
@@ -804,16 +804,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 33.33333%; }
   .col-lg-6 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -821,16 +821,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 41.66667%; }
   .col-lg-7 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 58.33333%;
     max-width: 58.33333%; }
@@ -838,16 +838,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 50%; }
   .col-lg-8 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 66.66667%;
     max-width: 66.66667%; }
@@ -855,16 +855,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 58.33333%; }
   .col-lg-9 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 75%;
     max-width: 75%; }
@@ -872,16 +872,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 66.66667%; }
   .col-lg-10 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 83.33333%;
     max-width: 83.33333%; }
@@ -889,16 +889,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 75%; }
   .col-lg-11 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 91.66667%;
     max-width: 91.66667%; }
@@ -906,16 +906,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 83.33333%; }
   .col-lg-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -923,8 +923,8 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 91.66667%; }
   .start-lg {
@@ -955,14 +955,14 @@
 
 @media only screen and (min-width: 1200px) {
   .container {
-    width: calc($xl-min - $gutter-width);
+    width: 1184px;
     max-width: 100%; }
   .col-xl {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-grow: 1;
     flex-basis: 0;
@@ -971,8 +971,8 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
@@ -980,16 +980,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 0%; }
   .col-xl-2 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 16.66667%;
     max-width: 16.66667%; }
@@ -997,16 +997,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 8.33333%; }
   .col-xl-3 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 25%;
     max-width: 25%; }
@@ -1014,16 +1014,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 16.66667%; }
   .col-xl-4 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 33.33333%;
     max-width: 33.33333%; }
@@ -1031,16 +1031,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 25%; }
   .col-xl-5 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
@@ -1048,16 +1048,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 33.33333%; }
   .col-xl-6 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 50%;
     max-width: 50%; }
@@ -1065,16 +1065,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 41.66667%; }
   .col-xl-7 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 58.33333%;
     max-width: 58.33333%; }
@@ -1082,16 +1082,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 50%; }
   .col-xl-8 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 66.66667%;
     max-width: 66.66667%; }
@@ -1099,16 +1099,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 58.33333%; }
   .col-xl-9 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 75%;
     max-width: 75%; }
@@ -1116,16 +1116,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 66.66667%; }
   .col-xl-10 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 83.33333%;
     max-width: 83.33333%; }
@@ -1133,16 +1133,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 75%; }
   .col-xl-11 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 91.66667%;
     max-width: 91.66667%; }
@@ -1150,16 +1150,16 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 83.33333%; }
   .col-xl-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     flex-basis: 100%;
     max-width: 100%; }
@@ -1167,8 +1167,8 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     flex-basis: 100%;
-    padding-right: calc(($gutter-width * 0.5));
-    padding-left: calc(($gutter-width * 0.5));
+    padding-right: 8px;
+    padding-left: 8px;
     max-width: 100%;
     margin-left: 91.66667%; }
   .start-xl {
