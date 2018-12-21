@@ -59,13 +59,13 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
 }
 
 @for $i from 1 through $columnsNumber {
+  .col-xs-offset-#{$i} {
+    margin-left: ($i * 100% / $columnsNumber);
+  }
   .col-xs-#{$i} {
     @include basic-column();
     flex-basis: ($i * 100% / $columnsNumber);
     max-width: ($i * 100% / $columnsNumber);
-  }
-  .col-xs-offset-#{$i} {
-    margin-left: ($i * 100% / $columnsNumber);
   }
 }
 
@@ -89,14 +89,14 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
     @include auto-column();
   }
   @for $i from 1 through $columnsNumber {
+    .col-sm-offset-#{$i - 1} {
+      @include basic-column();
+      margin-left: (($i - 1) * 100% / $columnsNumber);
+    }
     .col-sm-#{$i} {
       @include basic-column();
       flex-basis: ($i * 100% / $columnsNumber);
       max-width: ($i * 100% / $columnsNumber);
-    }
-    .col-sm-offset-#{$i - 1} {
-      @include basic-column();
-      margin-left: (($i - 1) * 100% / $columnsNumber);
     }
   }
 }
@@ -111,14 +111,14 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
     @include auto-column();
   }
   @for $i from 1 through $columnsNumber {
+    .col-md-offset-#{$i - 1} {
+      @include basic-column();
+      margin-left: (($i - 1) * 100% / $columnsNumber);
+    }
     .col-md-#{$i} {
       @include basic-column();
       flex-basis: ($i * 100% / $columnsNumber);
       max-width: ($i * 100% / $columnsNumber);
-    }
-    .col-md-offset-#{$i - 1} {
-      @include basic-column();
-      margin-left: (($i - 1) * 100% / $columnsNumber);
     }
   }
 }
@@ -133,14 +133,14 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
     @include auto-column();
   }
   @for $i from 1 through $columnsNumber {
+    .col-lg-offset-#{$i - 1} {
+      @include basic-column();
+      margin-left: (($i - 1) * 100% / $columnsNumber);
+    }
     .col-lg-#{$i} {
       @include basic-column();
       flex-basis: ($i * 100% / $columnsNumber);
       max-width: ($i * 100% / $columnsNumber);
-    }
-    .col-lg-offset-#{$i - 1} {
-      @include basic-column();
-      margin-left: (($i - 1) * 100% / $columnsNumber);
     }
   }
 }
@@ -155,14 +155,14 @@ $xlOnly: "only screen and (min-width: #{$xl-min})";
     @include auto-column();
   }
   @for $i from 1 through $columnsNumber {
+    .col-xl-offset-#{$i - 1} {
+      @include basic-column();
+      margin-left: (($i - 1) * 100% / $columnsNumber);
+    }
     .col-xl-#{$i} {
       @include basic-column();
       flex-basis: ($i * 100% / $columnsNumber);
       max-width: ($i * 100% / $columnsNumber);
-    }
-    .col-xl-offset-#{$i - 1} {
-      @include basic-column();
-      margin-left: (($i - 1) * 100% / $columnsNumber);
     }
   }
 }
